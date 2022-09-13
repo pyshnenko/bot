@@ -1,0 +1,1 @@
+{"user":[{"name":"антон","id":209103348,"manager":true,"first_name":"Антон","last_name":"Пышненко","username":"pysh94","remind":[{"date":"24-08-2022","time":1661356800000,"request":0,"timerId":1,"text":"Не забудь про стоматолога"}]}],"id":[209103348],"total":1}

@@ -1,0 +1,10 @@
+{
+    "config": {
+        "specification": {
+            "languageCode": "ru-RU"
+        }
+    },
+    "audio": {
+        "uri": "https://api.telegram.org/file/bot5434295456:AAHIna38OmszBNQGkJQeC1eBNyDmMkZIix0/voice/file_8.oga"
+    }
+}

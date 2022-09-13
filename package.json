@@ -1,0 +1,25 @@
+{
+  "name": "bottg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app_bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "spamigor",
+  "license": "ISC",
+  "dependencies": {
+    "cron": "^2.0.0",
+    "dotenv": "^16.0.1",
+    "imap-simple": "^5.1.0",
+    "lodash": "^4.17.21",
+    "mailparser": "^3.5.0",
+    "mongodb": "^4.8.1",
+    "node-cron": "^3.0.2",
+    "telegraf": "^3.38.0",
+    "telegraf-calendar-telegram": "^2.0.2",
+    "telegraf-time-picker": "^1.0.7",
+    "websocket": "^1.0.34",
+    "yandex-speech": "0.0.14"
+  }
+}
