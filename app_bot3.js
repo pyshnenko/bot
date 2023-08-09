@@ -7,7 +7,7 @@ const fs = require("fs");
 const Markup = require("telegraf/markup.js");
 const cron = require('node-cron');
 const MongoClient = require("mongodb").MongoClient;
-const url = "spamigor.site:27017";
+const url = "spamigor.ru:27017";
 const username = encodeURIComponent(process.env.LOGIN);
 const password = encodeURIComponent(process.env.PASS);
 const authMechanism = "DEFAULT";
@@ -311,7 +311,7 @@ client.on('connectFailed', function(error) {
     console.log('Connect Error: ' + error.toString());
 	setTimeout(() => {
 		console.log('reconnect');
-		client.connect('wss://spamigor.site:' + socketPort, 'echo-protocol');
+		client.connect('wss://spamigor.ru:' + socketPort, 'echo-protocol');
 	}, 60*1000)
 });
 
@@ -324,7 +324,7 @@ client.on('connect', function(connection) {
         console.log('echo-protocol Connection Closed');
 		setTimeout(() => {
 			console.log('reconnect');
-			client.connect('wss://spamigor.site:' + socketPort, 'echo-protocol');
+			client.connect('wss://spamigor.ru:' + socketPort, 'echo-protocol');
 		}, 60*1000)
     });
     connection.on('message', function(message) {
@@ -345,4 +345,4 @@ client.on('connect', function(connection) {
     sendNumber();
 });
 
-client.connect('wss://spamigor.site:' + socketPort, 'echo-protocol');
+client.connect('wss://spamigor.ru:' + socketPort, 'echo-protocol');
