@@ -1,6 +1,11 @@
 require('dotenv').config();
+const { SocksProxyAgent } = require('socks-proxy-agent');
+const PROXY_URL = process.env.SOCKS;
+const agent = new SocksProxyAgent(PROXY_URL);
 const Calendar = require('telegraf-calendar-telegram');
-const { Telegraf } = require('telegraf');
+const { Telegraf } = require('telegraf',{
+  telegram: { agent }
+});
 const bot = new Telegraf(process.env.BOT_TOKEN);
 const calendar = new Calendar(bot);
 const fs = require("fs");

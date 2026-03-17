@@ -16,6 +16,7 @@
     "mailparser": "^3.5.0",
     "mongodb": "^4.8.1",
     "node-cron": "^3.0.2",
+    "socks-proxy-agent": "^7.0.0",
     "telegraf": "^3.38.0",
     "telegraf-calendar-telegram": "^2.0.2",
     "telegraf-time-picker": "^1.0.7",
